@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitectura tipo de despliegue</title>
+  <desc id="desc">Diagrama animado. El tráfico de usuarios entra por HTTPS a Nginx y llega a la aplicación Node.js/Express. La administración viaja cifrada por un túnel WireGuard hasta Samba y SSH. Un escáner que intenta conectar al puerto 22 es bloqueado por el firewall y queda registrado en el log.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#1D1B30" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="560" rx="24"/></clipPath>
+    
+  </defs>
+  <g clip-path="url(#frame)">
+  <rect width="1200" height="560" fill="#141321"/>
+  <rect width="1200" height="560" fill="url(#grid)"/>
+  <text x="56" y="62" class="mono" font-size="22"><tspan fill="#A9FEF7">&gt;</tspan><tspan fill="#FFF6EC"> trace --live despliegue</tspan></text>
+  <rect x="480" y="100" width="672" height="420" rx="18" fill="#F8D847" fill-opacity="0.04" stroke="#F8D847" stroke-opacity="0.5" stroke-dasharray="6 6"/>
+  <text x="508" y="132" class="mono" font-size="17" fill="#F8D847">VPS · Linux</text>
+  <rect x="474" y="100" width="8" height="420" rx="4" fill="#FF4D6D" opacity="0.55"/>
+  <text x="478" y="92" class="mono" font-size="16" fill="#FF4D6D" text-anchor="middle">firewall</text>
+  <rect x="56" y="140" width="220" height="84" rx="12" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="1.8"/>
+  <text x="78" y="177" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Usuario</text>
+  <text x="78" y="204" class="mono" font-size="17" fill="#9A92B8">navegador · app</text>
+  <rect x="56" y="278" width="220" height="84" rx="12" fill="#1C1A2E" stroke="#FE428E" stroke-width="1.8"/>
+  <text x="78" y="315" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Admin</text>
+  <text x="78" y="342" class="mono" font-size="17" fill="#9A92B8">acceso remoto</text>
+  <rect x="56" y="416" width="220" height="84" rx="12" fill="#1C1A2E" stroke="#FF4D6D" stroke-width="1.8"/>
+  <text x="78" y="453" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Escáner</text>
+  <text x="78" y="480" class="mono" font-size="17" fill="#FF4D6D">origen desconocido</text>
+  <rect x="530" y="150" width="240" height="84" rx="12" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="1.8"/>
+  <text x="552" y="187" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Nginx</text>
+  <text x="552" y="214" class="mono" font-size="17" fill="#9A92B8">proxy · TLS</text>
+  <rect x="840" y="150" width="280" height="84" rx="12" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="1.8"/>
+  <text x="862" y="187" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Node.js / Express</text>
+  <text x="862" y="214" class="mono" font-size="17" fill="#9A92B8">API + web · Docker</text>
+  <rect x="530" y="288" width="240" height="84" rx="12" fill="#1C1A2E" stroke="#FE428E" stroke-width="1.8"/>
+  <text x="552" y="325" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">wg0</text>
+  <text x="552" y="352" class="mono" font-size="17" fill="#9A92B8">túnel cifrado</text>
+  <rect x="840" y="288" width="280" height="84" rx="12" fill="#1C1A2E" stroke="#FE428E" stroke-width="1.8"/>
+  <text x="862" y="325" class="sans" font-size="23" font-weight="700" fill="#FFF6EC">Samba · SSH</text>
+  <text x="862" y="352" class="mono" font-size="17" fill="#9A92B8">sin exposición pública</text>
+  <rect x="530" y="420" width="590" height="70" rx="12" fill="#0A0F1C" stroke="#2E2A47"/>
+  <text x="552" y="452" class="mono" font-size="16" fill="#9A92B8">/var/log/firewall</text>
+  <text x="552" y="476" class="mono" font-size="17" fill="#FF4D6D" opacity="0.35">DROP  tcp/22  src=185.xxx.xxx.xxx  política: denegar<animate attributeName="opacity" values="0.35;0.35;1;1;0.35" keyTimes="0;0.5;0.53;0.75;1" dur="3s" repeatCount="indefinite"/></text>
+  <defs>
+    <path id="a-u-ng" d="M276 182 L530 192"/>
+    <path id="a-ng-app" d="M770 192 L840 192"/>
+    <path id="a-ad-wg" d="M276 320 C 380 320, 420 330, 530 330"/>
+    <path id="a-wg-sb" d="M770 330 L840 330"/>
+    <path id="a-sc-fw" d="M276 458 L470 458"/>
+  </defs>
+  <use xlink:href="#a-u-ng" stroke="#A9FEF7" stroke-opacity="0.45" stroke-width="2" fill="none"/>
+  <use xlink:href="#a-ng-app" stroke="#A9FEF7" stroke-opacity="0.45" stroke-width="2" fill="none"/>
+  <use xlink:href="#a-ad-wg" stroke="#FE428E" stroke-opacity="0.22" stroke-width="10" fill="none"/>
+  <use xlink:href="#a-ad-wg" stroke="#FE428E" stroke-width="2.5" fill="none" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="32;0" dur="0.8s" repeatCount="indefinite"/></use>
+  <use xlink:href="#a-wg-sb" stroke="#FE428E" stroke-opacity="0.22" stroke-width="10" fill="none"/>
+  <use xlink:href="#a-wg-sb" stroke="#FE428E" stroke-width="2.5" fill="none" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="32;0" dur="0.8s" repeatCount="indefinite"/></use>
+  <use xlink:href="#a-sc-fw" stroke="#FF4D6D" stroke-opacity="0.35" stroke-width="2" fill="none" stroke-dasharray="3 7"/>
+  <text x="300" y="172" class="mono" font-size="17" fill="#A9FEF7">HTTPS :443</text>
+  <text x="300" y="306" class="mono" font-size="17" fill="#FE428E">WireGuard</text>
+  <text x="300" y="358" class="mono" font-size="17" fill="#FE428E" opacity="0.8">:51820/udp</text>
+  <text x="300" y="446" class="mono" font-size="17" fill="#FF4D6D">tcp :22</text>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.8s" begin="0.0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-u-ng"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.5s" begin="0.0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-ad-wg"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.8s" begin="-0.6s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-u-ng"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.5s" begin="-0.5s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-ad-wg"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.8s" begin="-1.2s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-u-ng"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.5s" begin="-1.0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-ad-wg"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="0.6s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-ng-app"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="0.6s" begin="-0.3s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#a-wg-sb"/></animateMotion></circle>
+  <circle r="5" fill="#FF4D6D" filter="url(#glow)"><animateMotion dur="3s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"><mpath xlink:href="#a-sc-fw"/></animateMotion><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="478" cy="458" r="6" fill="none" stroke="#FF4D6D" stroke-width="3" opacity="0"><animate attributeName="r" values="6;6;30;30" keyTimes="0;0.5;0.7;1" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5;0.52;0.7;1" dur="3s" repeatCount="indefinite"/></circle>
+  <g opacity="0" stroke="#FF4D6D" stroke-width="4" stroke-linecap="round"><line x1="440" y1="440" x2="456" y2="456"/><line x1="456" y1="440" x2="440" y2="456"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.52;0.8;1" dur="3s" repeatCount="indefinite"/></g>
+  <text x="448" y="500" class="mono" font-size="16" font-weight="700" fill="#FF4D6D" text-anchor="middle" opacity="0">BLOCKED<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.52;0.8;1" dur="3s" repeatCount="indefinite"/></text>
+  <text x="56" y="540" class="mono" font-size="16" fill="#9A92B8">expuesto: <tspan fill="#A9FEF7">443/tcp</tspan> · <tspan fill="#FE428E">51820/udp</tspan>   ·   resto: <tspan fill="#FF4D6D">DROP</tspan></text>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="559" rx="24" fill="none" stroke="#2E2A47"/>
+</svg>

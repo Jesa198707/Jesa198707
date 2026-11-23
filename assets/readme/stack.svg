@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Stack tecnológico</title>
+  <desc id="desc">Panel animado con cuatro columnas que se iluminan en ola. Lenguajes: Java, Python, C#, SQL. Backend y web: Node.js, Express, Nginx. Sistemas: Linux, Docker, Samba. Red y seguridad: WireGuard, TLS / HTTPS, bastionado.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#1D1B30" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="400" rx="24"/></clipPath>
+    
+  </defs>
+  <g clip-path="url(#frame)">
+  <rect width="1200" height="400" fill="#141321"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+  <text x="56" y="62" class="mono" font-size="22"><tspan fill="#A9FEF7">&gt;</tspan><tspan fill="#FFF6EC"> stack --list</tspan></text>
+  <text x="1144" y="62" class="mono" font-size="16" fill="#9A92B8" text-anchor="end"><tspan fill="#FF8A4C">●</tspan> 13 módulos cargados</text>
+  <text x="56" y="118" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="#A9FEF7">LENGUAJES</text>
+  <rect x="56" y="132" width="254" height="3" rx="1.5" fill="#A9FEF7" opacity="0.25"/>
+  <rect x="56" y="132" width="60" height="3" rx="1.5" fill="#A9FEF7" filter="url(#glow)"><animate attributeName="x" values="56;250;56" dur="4s" begin="-0.0s" repeatCount="indefinite"/></rect>
+  <rect x="56" y="152" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="56" y="152" width="254" height="46" rx="10" fill="#A9FEF7" fill-opacity="0.08" stroke="#A9FEF7" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="0.0s" repeatCount="indefinite"/></rect>
+  <circle cx="78" cy="175" r="5" fill="#A9FEF7"/>
+  <text x="96" y="183" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Java</text>
+  <rect x="56" y="210" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="56" y="210" width="254" height="46" rx="10" fill="#A9FEF7" fill-opacity="0.08" stroke="#A9FEF7" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="0.25s" repeatCount="indefinite"/></rect>
+  <circle cx="78" cy="233" r="5" fill="#A9FEF7"/>
+  <text x="96" y="241" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Python</text>
+  <rect x="56" y="268" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="56" y="268" width="254" height="46" rx="10" fill="#A9FEF7" fill-opacity="0.08" stroke="#A9FEF7" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="0.5s" repeatCount="indefinite"/></rect>
+  <circle cx="78" cy="291" r="5" fill="#A9FEF7"/>
+  <text x="96" y="299" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">C#</text>
+  <rect x="56" y="326" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="56" y="326" width="254" height="46" rx="10" fill="#A9FEF7" fill-opacity="0.08" stroke="#A9FEF7" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="0.75s" repeatCount="indefinite"/></rect>
+  <circle cx="78" cy="349" r="5" fill="#A9FEF7"/>
+  <text x="96" y="357" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">SQL</text>
+  <text x="334" y="118" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="#F8D847">BACKEND · WEB</text>
+  <rect x="334" y="132" width="254" height="3" rx="1.5" fill="#F8D847" opacity="0.25"/>
+  <rect x="334" y="132" width="60" height="3" rx="1.5" fill="#F8D847" filter="url(#glow)"><animate attributeName="x" values="334;528;334" dur="4s" begin="-0.7s" repeatCount="indefinite"/></rect>
+  <rect x="334" y="152" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="334" y="152" width="254" height="46" rx="10" fill="#F8D847" fill-opacity="0.08" stroke="#F8D847" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="1.0s" repeatCount="indefinite"/></rect>
+  <circle cx="356" cy="175" r="5" fill="#F8D847"/>
+  <text x="374" y="183" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Node.js</text>
+  <rect x="334" y="210" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="334" y="210" width="254" height="46" rx="10" fill="#F8D847" fill-opacity="0.08" stroke="#F8D847" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="1.25s" repeatCount="indefinite"/></rect>
+  <circle cx="356" cy="233" r="5" fill="#F8D847"/>
+  <text x="374" y="241" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Express</text>
+  <rect x="334" y="268" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="334" y="268" width="254" height="46" rx="10" fill="#F8D847" fill-opacity="0.08" stroke="#F8D847" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="1.5s" repeatCount="indefinite"/></rect>
+  <circle cx="356" cy="291" r="5" fill="#F8D847"/>
+  <text x="374" y="299" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Nginx</text>
+  <text x="612" y="118" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="#FF8A4C">SISTEMAS</text>
+  <rect x="612" y="132" width="254" height="3" rx="1.5" fill="#FF8A4C" opacity="0.25"/>
+  <rect x="612" y="132" width="60" height="3" rx="1.5" fill="#FF8A4C" filter="url(#glow)"><animate attributeName="x" values="612;806;612" dur="4s" begin="-1.4s" repeatCount="indefinite"/></rect>
+  <rect x="612" y="152" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="612" y="152" width="254" height="46" rx="10" fill="#FF8A4C" fill-opacity="0.08" stroke="#FF8A4C" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="1.75s" repeatCount="indefinite"/></rect>
+  <circle cx="634" cy="175" r="5" fill="#FF8A4C"/>
+  <text x="652" y="183" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Linux</text>
+  <rect x="612" y="210" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="612" y="210" width="254" height="46" rx="10" fill="#FF8A4C" fill-opacity="0.08" stroke="#FF8A4C" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="2.0s" repeatCount="indefinite"/></rect>
+  <circle cx="634" cy="233" r="5" fill="#FF8A4C"/>
+  <text x="652" y="241" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Docker</text>
+  <rect x="612" y="268" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="612" y="268" width="254" height="46" rx="10" fill="#FF8A4C" fill-opacity="0.08" stroke="#FF8A4C" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="2.25s" repeatCount="indefinite"/></rect>
+  <circle cx="634" cy="291" r="5" fill="#FF8A4C"/>
+  <text x="652" y="299" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Samba</text>
+  <text x="890" y="118" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="#FE428E">RED · SEGURIDAD</text>
+  <rect x="890" y="132" width="254" height="3" rx="1.5" fill="#FE428E" opacity="0.25"/>
+  <rect x="890" y="132" width="60" height="3" rx="1.5" fill="#FE428E" filter="url(#glow)"><animate attributeName="x" values="890;1084;890" dur="4s" begin="-2.0999999999999996s" repeatCount="indefinite"/></rect>
+  <rect x="890" y="152" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="890" y="152" width="254" height="46" rx="10" fill="#FE428E" fill-opacity="0.08" stroke="#FE428E" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="2.5s" repeatCount="indefinite"/></rect>
+  <circle cx="912" cy="175" r="5" fill="#FE428E"/>
+  <text x="930" y="183" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">WireGuard</text>
+  <rect x="890" y="210" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="890" y="210" width="254" height="46" rx="10" fill="#FE428E" fill-opacity="0.08" stroke="#FE428E" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="2.75s" repeatCount="indefinite"/></rect>
+  <circle cx="912" cy="233" r="5" fill="#FE428E"/>
+  <text x="930" y="241" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">TLS / HTTPS</text>
+  <rect x="890" y="268" width="254" height="46" rx="10" fill="#1C1A2E" stroke="#2E2A47"/>
+  <rect x="890" y="268" width="254" height="46" rx="10" fill="#FE428E" fill-opacity="0.08" stroke="#FE428E" stroke-width="1.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.05;0.12;0.3;1" dur="5s" begin="3.0s" repeatCount="indefinite"/></rect>
+  <circle cx="912" cy="291" r="5" fill="#FE428E"/>
+  <text x="930" y="299" class="sans" font-size="23" font-weight="600" fill="#FFF6EC">Bastionado</text>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="24" fill="none" stroke="#2E2A47"/>
+</svg>

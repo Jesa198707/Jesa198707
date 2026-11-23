@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Jesa — Desarrollo multiplataforma, sistemas Linux y ciberseguridad</title>
+  <desc id="desc">Cabecera animada: el nombre JESA con un degradado neón en movimiento, una terminal que escribe los roles Desarrollador DAM, Linux, Docker y Nginx, Ciberseguridad y VPNs, y Java, Python y Node.js. A la derecha, una red en vivo: un equipo de desarrollo conectado por un túnel WireGuard a un VPS con Nginx, Docker y Samba. Abajo, una cinta con el stack tecnológico.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#1D1B30" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="470" rx="24"/></clipPath>
+    <linearGradient id="name-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#FFF6EC"/>
+      <stop offset="0.33" stop-color="#F8D847"/>
+      <stop offset="0.66" stop-color="#FF8A4C"/>
+      <stop offset="1" stop-color="#FFF6EC"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;640 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F8D847" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#F8D847" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A9FEF7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#A9FEF7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.08" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.92" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="ticker-mask"><rect x="0" y="400" width="1200" height="70" fill="url(#fade)"/></mask>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B1030"/>
+      <stop offset="0.35" stop-color="#3D1C4F"/>
+      <stop offset="0.62" stop-color="#8A2E5B"/>
+      <stop offset="0.80" stop-color="#D9534F"/>
+      <stop offset="0.95" stop-color="#F79A4A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF0B8"/>
+      <stop offset="0.7" stop-color="#FFC56B"/>
+      <stop offset="1" stop-color="#FF9F4A"/>
+    </radialGradient>
+    <radialGradient id="sun-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFC56B" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFC56B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#frame)">
+  <rect width="1200" height="470" fill="#141321"/>
+  <rect width="1200" height="470" fill="url(#grid)"/>
+  <rect width="1200" height="404" fill="url(#sky)"/>
+  <circle cx="140" cy="90" r="2.2" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" begin="-0.00s" repeatCount="indefinite"/></circle>
+  <circle cx="260" cy="60" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.9s" begin="-0.37s" repeatCount="indefinite"/></circle>
+  <circle cx="420" cy="110" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.6s" begin="-0.74s" repeatCount="indefinite"/></circle>
+  <circle cx="520" cy="70" r="2.2" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.3s" begin="-1.11s" repeatCount="indefinite"/></circle>
+  <circle cx="640" cy="40" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" begin="-1.48s" repeatCount="indefinite"/></circle>
+  <circle cx="760" cy="95" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.9s" begin="-1.85s" repeatCount="indefinite"/></circle>
+  <circle cx="880" cy="55" r="2.2" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.6s" begin="-2.22s" repeatCount="indefinite"/></circle>
+  <circle cx="1010" cy="85" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.3s" begin="-2.59s" repeatCount="indefinite"/></circle>
+  <circle cx="1130" cy="50" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" begin="-2.96s" repeatCount="indefinite"/></circle>
+  <circle cx="340" cy="150" r="2.2" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.9s" begin="-3.33s" repeatCount="indefinite"/></circle>
+  <circle cx="600" cy="140" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.6s" begin="-3.70s" repeatCount="indefinite"/></circle>
+  <circle cx="980" cy="160" r="1.6" fill="#FFF6EC" opacity="0.7"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.3s" begin="-4.07s" repeatCount="indefinite"/></circle>
+  <circle cx="590" cy="318" r="150" fill="url(#sun-halo)"><animate attributeName="r" values="140;170;140" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="590" cy="318" r="66" fill="url(#sun)"/>
+  <path d="M0 300 L120 255 L230 290 L340 240 L460 285 L560 252 L680 292 L800 245 L930 280 L1040 238 L1200 285 V404 H0 Z" fill="#7A2B57"/>
+  <path d="M0 338 L90 312 L200 342 L310 302 L430 346 L560 318 L690 352 L820 312 L950 346 L1080 306 L1200 336 V404 H0 Z" fill="#4A1C45"/>
+  <path d="M0 404 L0 372 L40 365 L80 359 L120 354 L160 351 L200 350 L240 351 L280 354 L320 359 L360 365 L400 372 L440 379 L480 385 L520 390 L560 393 L600 394 L640 393 L680 390 L720 385 L760 379 L800 372 L840 365 L880 359 L920 354 L960 351 L1000 350 L1040 351 L1080 354 L1120 359 L1160 365 L1200 372 V404 Z M30 313 L47 371 L13 371 Z M70 325 L82 365 L58 365 Z M118 288 L139 358 L97 358 Z M180 308 L194 354 L166 354 Z M330 313 L346 365 L314 365 Z M372 337 L382 371 L362 371 Z M760 339 L773 383 L747 383 Z M800 310 L820 376 L780 376 Z M850 330 L861 368 L839 368 Z M1120 301 L1139 363 L1101 363 Z M1160 325 L1173 369 L1147 369 Z " fill="#22112E"/>
+  <g class="mono" font-size="16">
+    <circle cx="62" cy="48" r="6" fill="#FF8A4C"><animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="62" cy="48" r="6" fill="none" stroke="#FF8A4C" stroke-width="2"><animate attributeName="r" values="6;16" dur="1.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="1.6s" begin="0s" repeatCount="indefinite"/></circle>
+    <text x="80" y="54" fill="#FF8A4C" font-weight="700" letter-spacing="2">ONLINE</text>
+    <text x="164" y="54" fill="#9A92B8">jesa@secure-shell · tty1 · cifrado extremo a extremo</text>
+  </g>
+  <text x="60" y="128" class="mono" font-size="22" fill="#F8D847">&gt; whoami</text>
+  <text x="59" y="259" class="sans" font-size="150" font-weight="800" letter-spacing="6" fill="#1B1030" opacity="0.8">JESA</text>
+  <text x="52" y="252" class="sans" font-size="150" font-weight="800" letter-spacing="6" fill="url(#name-grad)">JESA</text>
+  <rect x="44" y="276" width="500" height="52" rx="10" fill="#1B1030" opacity="0.65"/>
+  <defs><clipPath id="role0"><rect x="98" y="282" width="0" height="44"><animate attributeName="width" values="0;18;36;54;72;90;108;126;144;162;180;198;216;234;252;270;288;306;306;288;270;252;234;216;198;180;162;144;126;108;90;72;54;36;18;0;0" keyTimes="0.0000;0.0063;0.0125;0.0187;0.0250;0.0312;0.0375;0.0437;0.0500;0.0563;0.0625;0.0688;0.0750;0.0813;0.0875;0.0938;0.1000;0.1062;0.2000;0.2022;0.2044;0.2066;0.2088;0.2110;0.2132;0.2154;0.2177;0.2198;0.2221;0.2243;0.2265;0.2287;0.2309;0.2331;0.2353;0.2375;1.0000" dur="16.0s" calcMode="discrete" repeatCount="indefinite"/></rect></clipPath><clipPath id="role1"><rect x="98" y="282" width="0" height="44"><animate attributeName="width" values="0;0;18;36;54;72;90;108;126;144;162;180;198;216;234;252;270;288;306;324;342;360;378;396;396;378;360;342;324;306;288;270;252;234;216;198;180;162;144;126;108;90;72;54;36;18;0;0" keyTimes="0.0000;0.2500;0.2548;0.2597;0.2645;0.2693;0.2742;0.2790;0.2838;0.2886;0.2935;0.2983;0.3031;0.3080;0.3128;0.3176;0.3224;0.3273;0.3321;0.3369;0.3418;0.3466;0.3514;0.3563;0.4500;0.4517;0.4534;0.4551;0.4568;0.4585;0.4602;0.4619;0.4636;0.4653;0.4670;0.4688;0.4705;0.4722;0.4739;0.4756;0.4773;0.4790;0.4807;0.4824;0.4841;0.4858;0.4875;1.0000" dur="16.0s" calcMode="discrete" repeatCount="indefinite"/></rect></clipPath><clipPath id="role2"><rect x="98" y="282" width="0" height="44"><animate attributeName="width" values="0;0;18;36;54;72;90;108;126;144;162;180;198;216;234;252;270;288;306;324;342;360;378;378;360;342;324;306;288;270;252;234;216;198;180;162;144;126;108;90;72;54;36;18;0;0" keyTimes="0.0000;0.5000;0.5051;0.5101;0.5152;0.5202;0.5253;0.5304;0.5354;0.5405;0.5455;0.5506;0.5557;0.5607;0.5658;0.5708;0.5759;0.5809;0.5860;0.5911;0.5961;0.6012;0.6062;0.7000;0.7018;0.7036;0.7054;0.7071;0.7089;0.7107;0.7125;0.7143;0.7161;0.7179;0.7196;0.7214;0.7232;0.7250;0.7268;0.7286;0.7304;0.7321;0.7339;0.7357;0.7375;1.0000" dur="16.0s" calcMode="discrete" repeatCount="indefinite"/></rect></clipPath><clipPath id="role3"><rect x="98" y="282" width="0" height="44"><animate attributeName="width" values="0;0;18;36;54;72;90;108;126;144;162;180;198;216;234;252;270;288;306;324;342;360;378;396;414;414;396;378;360;342;324;306;288;270;252;234;216;198;180;162;144;126;108;90;72;54;36;18;0;0" keyTimes="0.0000;0.7500;0.7546;0.7592;0.7639;0.7685;0.7731;0.7777;0.7823;0.7870;0.7916;0.7962;0.8008;0.8054;0.8101;0.8147;0.8193;0.8239;0.8285;0.8331;0.8378;0.8424;0.8470;0.8516;0.8562;0.9500;0.9516;0.9533;0.9549;0.9565;0.9581;0.9598;0.9614;0.9630;0.9647;0.9663;0.9679;0.9696;0.9712;0.9728;0.9745;0.9761;0.9777;0.9794;0.9810;0.9826;0.9842;0.9859;0.9875;1.0000" dur="16.0s" calcMode="discrete" repeatCount="indefinite"/></rect></clipPath></defs>
+  <text x="60" y="314" class="mono" font-size="30" fill="#FE428E">$</text>
+  <text x="98" y="314" class="mono" font-size="30" fill="#FFF6EC" textLength="306" lengthAdjust="spacingAndGlyphs" clip-path="url(#role0)">Desarrollador DAM</text>
+  <text x="98" y="314" class="mono" font-size="30" fill="#FFF6EC" textLength="396" lengthAdjust="spacingAndGlyphs" clip-path="url(#role1)">Linux · Docker · Nginx</text>
+  <text x="98" y="314" class="mono" font-size="30" fill="#FFF6EC" textLength="378" lengthAdjust="spacingAndGlyphs" clip-path="url(#role2)">Ciberseguridad &amp; VPNs</text>
+  <text x="98" y="314" class="mono" font-size="30" fill="#FFF6EC" textLength="414" lengthAdjust="spacingAndGlyphs" clip-path="url(#role3)">Java · Python · Node.js</text>
+  
+  <rect x="98" y="286" width="15" height="34" fill="#A9FEF7" filter="url(#glow)"><animate attributeName="x" values="98;116;134;152;170;188;206;224;242;260;278;296;314;332;350;368;386;404;404;386;368;350;332;314;296;278;260;242;224;206;188;170;152;134;116;98;98;116;134;152;170;188;206;224;242;260;278;296;314;332;350;368;386;404;422;440;458;476;494;494;476;458;440;422;404;386;368;350;332;314;296;278;260;242;224;206;188;170;152;134;116;98;98;116;134;152;170;188;206;224;242;260;278;296;314;332;350;368;386;404;422;440;458;476;476;458;440;422;404;386;368;350;332;314;296;278;260;242;224;206;188;170;152;134;116;98;98;116;134;152;170;188;206;224;242;260;278;296;314;332;350;368;386;404;422;440;458;476;494;512;512;494;476;458;440;422;404;386;368;350;332;314;296;278;260;242;224;206;188;170;152;134;116;98;98" keyTimes="0.0000;0.0063;0.0125;0.0187;0.0250;0.0312;0.0375;0.0437;0.0500;0.0563;0.0625;0.0688;0.0750;0.0813;0.0875;0.0938;0.1000;0.1062;0.2000;0.2022;0.2044;0.2066;0.2088;0.2110;0.2132;0.2154;0.2177;0.2198;0.2221;0.2243;0.2265;0.2287;0.2309;0.2331;0.2353;0.2375;0.2500;0.2548;0.2597;0.2645;0.2693;0.2742;0.2790;0.2838;0.2886;0.2935;0.2983;0.3031;0.3080;0.3128;0.3176;0.3224;0.3273;0.3321;0.3369;0.3418;0.3466;0.3514;0.3563;0.4500;0.4517;0.4534;0.4551;0.4568;0.4585;0.4602;0.4619;0.4636;0.4653;0.4670;0.4688;0.4705;0.4722;0.4739;0.4756;0.4773;0.4790;0.4807;0.4824;0.4841;0.4858;0.4875;0.5000;0.5051;0.5101;0.5152;0.5202;0.5253;0.5304;0.5354;0.5405;0.5455;0.5506;0.5557;0.5607;0.5658;0.5708;0.5759;0.5809;0.5860;0.5911;0.5961;0.6012;0.6062;0.7000;0.7018;0.7036;0.7054;0.7071;0.7089;0.7107;0.7125;0.7143;0.7161;0.7179;0.7196;0.7214;0.7232;0.7250;0.7268;0.7286;0.7304;0.7321;0.7339;0.7357;0.7375;0.7500;0.7546;0.7592;0.7639;0.7685;0.7731;0.7777;0.7823;0.7870;0.7916;0.7962;0.8008;0.8054;0.8101;0.8147;0.8193;0.8239;0.8285;0.8331;0.8378;0.8424;0.8470;0.8516;0.8562;0.9500;0.9516;0.9533;0.9549;0.9565;0.9581;0.9598;0.9614;0.9630;0.9647;0.9663;0.9679;0.9696;0.9712;0.9728;0.9745;0.9761;0.9777;0.9794;0.9810;0.9826;0.9842;0.9859;0.9875;1.0000" dur="16.0s" calcMode="discrete" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.15" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/></rect>
+  <text x="60" y="362" class="sans" font-size="21" fill="#FFF6EC">Desarrollo multiplataforma · Sistemas Linux · Ciberseguridad</text>
+  <g id="network">
+  <defs>
+    <path id="e-dev-wg" d="M722 240 L811 240"/>
+    <path id="e-wg-vps" d="M859 240 L939 240"/>
+    <path id="e-vps-ng" d="M995 214 Q 1030 140 1070 136"/>
+    <path id="e-vps-dk" d="M1011 240 L1092 240"/>
+    <path id="e-vps-sb" d="M995 266 Q 1030 340 1070 344"/>
+  </defs>
+  <use xlink:href="#e-vps-ng" stroke="#A9FEF7" stroke-opacity="0.35" stroke-width="2" fill="none"/>
+  <use xlink:href="#e-vps-dk" stroke="#A9FEF7" stroke-opacity="0.35" stroke-width="2" fill="none"/>
+  <use xlink:href="#e-vps-sb" stroke="#A9FEF7" stroke-opacity="0.35" stroke-width="2" fill="none"/>
+  <use xlink:href="#e-dev-wg" stroke="#FE428E" stroke-opacity="0.25" stroke-width="8" fill="none"/>
+  <use xlink:href="#e-dev-wg" stroke="#FE428E" stroke-width="2.5" fill="none" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="32;0" dur="0.8s" repeatCount="indefinite"/></use>
+  <use xlink:href="#e-wg-vps" stroke="#FE428E" stroke-opacity="0.25" stroke-width="8" fill="none"/>
+  <use xlink:href="#e-wg-vps" stroke="#FE428E" stroke-width="2.5" fill="none" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="32;0" dur="0.8s" repeatCount="indefinite"/></use>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="0.0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-dev-wg"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="-0.2s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-wg-vps"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="-0.4s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-dev-wg"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="-0.6000000000000001s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-wg-vps"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="-0.8s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-dev-wg"/></animateMotion></circle>
+  <circle r="4" fill="#FE428E" filter="url(#glow)"><animateMotion dur="1.2s" begin="-1.0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-wg-vps"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-vps-ng"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.6s" begin="-0.8s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-vps-ng"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.1s" begin="-0.3s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-vps-dk"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.8s" begin="-0.5s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-vps-sb"/></animateMotion></circle>
+  <circle r="4" fill="#A9FEF7" filter="url(#glow)"><animateMotion dur="1.8s" begin="-1.4s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#e-vps-sb"/></animateMotion></circle>
+  <circle cx="975" cy="240" r="54" fill="none" stroke="#F8D847" stroke-width="1.5" stroke-dasharray="4 10"><animateTransform attributeName="transform" type="rotate" values="0 975 240;360 975 240" dur="12s" repeatCount="indefinite"/></circle>
+  <circle cx="975" cy="240" r="36" fill="none" stroke="#F8D847" stroke-width="2"><animate attributeName="r" values="36;70" dur="2.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
+  <circle cx="975" cy="240" r="36" fill="#1C1A2E" stroke="#F8D847" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="975" y="246" class="mono" font-size="17" font-weight="700" fill="#FFF6EC" text-anchor="middle">VPS</text>
+  <circle cx="835" cy="240" r="24" fill="none" stroke="#FE428E" stroke-width="2"><animate attributeName="r" values="24;46" dur="1.8s" begin="-0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="1.8s" begin="-0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="835" cy="240" r="24" fill="#1C1A2E" stroke="#FE428E" stroke-width="2.5" filter="url(#glow)"/>
+  <path d="M835 228 L845 232 L845 240 Q845 249 835 253 Q825 249 825 240 L825 232 Z" fill="none" stroke="#FE428E" stroke-width="2"/>
+  <circle cx="700" cy="240" r="20" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="2"/>
+  <circle cx="700" cy="240" r="5" fill="#A9FEF7"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="-0.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1090" cy="130" r="20" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="2"/>
+  <circle cx="1090" cy="130" r="5" fill="#A9FEF7"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="-1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="1112" cy="240" r="20" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="2"/>
+  <circle cx="1112" cy="240" r="5" fill="#A9FEF7"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="-1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1090" cy="350" r="20" fill="#1C1A2E" stroke="#A9FEF7" stroke-width="2"/>
+  <circle cx="1090" cy="350" r="5" fill="#A9FEF7"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="-0.5s" repeatCount="indefinite"/></circle>
+  <text x="700" y="290" class="mono" font-size="17" fill="#FFF6EC" text-anchor="middle">dev</text>
+  <text x="835" y="296" class="mono" font-size="17" fill="#F8D847" text-anchor="middle">wireguard</text>
+  <text x="1090" y="92" class="mono" font-size="17" fill="#FFF6EC" text-anchor="middle">nginx</text>
+  <text x="1112" y="290" class="mono" font-size="17" fill="#FFF6EC" text-anchor="middle">docker</text>
+  <text x="1090" y="400" class="mono" font-size="17" fill="#FFF6EC" text-anchor="middle">samba</text>
+  </g>
+  <line x1="0" y1="404" x2="1200" y2="404" stroke="#2E2A47"/>
+  <g mask="url(#ticker-mask)"><g class="mono" font-size="22"><text x="0" y="446" fill="#FFF6EC">Java</text><text x="83" y="444" fill="#FE428E" font-size="14">◆</text><text x="124" y="446" fill="#FFF6EC">Python</text><text x="234" y="444" fill="#FE428E" font-size="14">◆</text><text x="275" y="446" fill="#FFF6EC">C#</text><text x="331" y="444" fill="#FE428E" font-size="14">◆</text><text x="372" y="446" fill="#FFF6EC">SQL</text><text x="442" y="444" fill="#FE428E" font-size="14">◆</text><text x="482" y="446" fill="#FFF6EC">Node.js</text><text x="606" y="444" fill="#FE428E" font-size="14">◆</text><text x="647" y="446" fill="#FFF6EC">Express</text><text x="770" y="444" fill="#FE428E" font-size="14">◆</text><text x="812" y="446" fill="#FFF6EC">Linux</text><text x="908" y="444" fill="#FE428E" font-size="14">◆</text><text x="949" y="446" fill="#FFF6EC">Nginx</text><text x="1046" y="444" fill="#FE428E" font-size="14">◆</text><text x="1086" y="446" fill="#FFF6EC">Docker</text><text x="1196" y="444" fill="#FE428E" font-size="14">◆</text><text x="1238" y="446" fill="#FFF6EC">WireGuard</text><text x="1388" y="444" fill="#FE428E" font-size="14">◆</text><text x="1429" y="446" fill="#FFF6EC">Samba</text><text x="1526" y="444" fill="#FE428E" font-size="14">◆</text><text x="1566" y="446" fill="#FFF6EC">Java</text><text x="1649" y="444" fill="#FE428E" font-size="14">◆</text><text x="1690" y="446" fill="#FFF6EC">Python</text><text x="1800" y="444" fill="#FE428E" font-size="14">◆</text><text x="1841" y="446" fill="#FFF6EC">C#</text><text x="1897" y="444" fill="#FE428E" font-size="14">◆</text><text x="1938" y="446" fill="#FFF6EC">SQL</text><text x="2008" y="444" fill="#FE428E" font-size="14">◆</text><text x="2048" y="446" fill="#FFF6EC">Node.js</text><text x="2172" y="444" fill="#FE428E" font-size="14">◆</text><text x="2213" y="446" fill="#FFF6EC">Express</text><text x="2336" y="444" fill="#FE428E" font-size="14">◆</text><text x="2378" y="446" fill="#FFF6EC">Linux</text><text x="2474" y="444" fill="#FE428E" font-size="14">◆</text><text x="2515" y="446" fill="#FFF6EC">Nginx</text><text x="2612" y="444" fill="#FE428E" font-size="14">◆</text><text x="2652" y="446" fill="#FFF6EC">Docker</text><text x="2762" y="444" fill="#FE428E" font-size="14">◆</text><text x="2804" y="446" fill="#FFF6EC">WireGuard</text><text x="2954" y="444" fill="#FE428E" font-size="14">◆</text><text x="2995" y="446" fill="#FFF6EC">Samba</text><text x="3092" y="444" fill="#FE428E" font-size="14">◆</text><animateTransform attributeName="transform" type="translate" values="0 0;-1566 0" dur="28s" repeatCount="indefinite"/></g></g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="469" rx="24" fill="none" stroke="#2E2A47"/>
+</svg>
