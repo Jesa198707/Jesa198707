@@ -7,7 +7,7 @@ Desarrollo aplicaciones multiplataforma y la infraestructura Linux que las manti
 ## Actividad
 
 <p align="center">
-  <img src="./assets/readme/stats.svg" width="100%" alt="Actividad en GitHub: 156 contribuciones y 146 commits desde octubre de 2025, 9 repositorios (8 privados), racha más larga de 3 días">
+  <img src="./assets/readme/stats.svg" width="100%" alt="Actividad en GitHub: contribuciones, commits, repositorios y rachas, actualizado a diario">
 </p>
 
 ## Stack
